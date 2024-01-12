@@ -8,9 +8,7 @@ public class Credential {
 
 
     public Credential(){
-//        this.description = "None";
-//        this.username = "None";
-//        this.password = "None";
+
     }
 
     public void setDescription(String description){

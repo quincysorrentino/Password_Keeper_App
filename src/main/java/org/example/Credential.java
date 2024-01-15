@@ -1,17 +1,27 @@
 package org.example;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+
+@Entity // create entity using Credential class
 public class Credential {
 
+    @Id // used to denote primary key
+    @Column(name = "description")
     private String description;
+    @Column(name = "username")
     private String username;
+    @Column(name = "password")
     private String password;
 
 
-    public Credential(){
+    public Credential() {
 
     }
 
-    public void setDescription(String description){
+    public void setDescription(String description) {
         this.description = description;
     }
 
@@ -23,19 +33,19 @@ public class Credential {
         this.password = passwordString;
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return this.description;
     }
 
-    public String getUsername(){
+    public String getUsername() {
         return this.username;
     }
 
-    public String getPassword(){
+    public String getPassword() {
         return this.password;
     }
 
-    public void println(){
+    public void println() {
         System.out.println("\n-----------------------------------------------------------------\n");
         System.out.println("Website/App: " + this.description);
         System.out.println("Username: " + this.username);

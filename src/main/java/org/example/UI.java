@@ -173,6 +173,7 @@ public class UI extends JFrame {
                 String[] newData = loginsData.toArray(new String[0]);
                 loginsDisplay.setListData(newData);
 
+
             }
         });
 
@@ -223,10 +224,16 @@ public class UI extends JFrame {
                 selectedLoginLoginDisplay = loginsDisplay.getSelectedValue();
                 searchedLogin = service.findLogin(session, selectedLoginLoginDisplay);
 
-                descriptionDisplay.setText(searchedLogin.getDescription());
-                usernameDisplay.setText(searchedLogin.getUsername());
-                passwordDisplay.setText(searchedLogin.getPassword());
+                if (searchedLogin != null) {
+                    descriptionDisplay.setText(searchedLogin.getDescription());
+                    usernameDisplay.setText(searchedLogin.getUsername());
+                    passwordDisplay.setText(searchedLogin.getPassword());
 
+                } else {
+                    descriptionDisplay.setText("");
+                    usernameDisplay.setText("");
+                    passwordDisplay.setText("");
+                }
                 descriptionField.setText("Website/App Name");
 
 

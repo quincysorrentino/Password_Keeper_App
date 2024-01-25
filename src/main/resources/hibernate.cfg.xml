@@ -16,3 +16,4 @@
         <property name="hibernate.show_sql">false</property>  <!--change to true to display sql-->
     </session-factory>
 </hibernate-configuration>
+

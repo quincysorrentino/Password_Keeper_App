@@ -72,8 +72,7 @@ The project is currently configured to run locally, but future enhancements may 
 
 Demo Video
 ----------
-
-For a detailed walkthrough of the app's functionalities, watch the demo video.
+[For a detailed walkthrough of the app's functionalities, watch the demo video.](https://www.youtube.com/watch?v=your-video-id)
 
 Dependencies
 ------------

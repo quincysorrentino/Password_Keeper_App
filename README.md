@@ -60,9 +60,6 @@ The Password Keeper App is a Java-based application designed to simplify passwor
 
     -   After setting up the database and updating the Hibernate configuration, you can run the application using the provided Maven commands in the previous section.
 
-Database Setup Image
---------------------
-
 
 
 Future Plans

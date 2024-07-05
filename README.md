@@ -17,7 +17,7 @@ The Password Keeper App is a Java-based application designed to simplify passwor
    git clone https://github.com/quincysorrentino/Password_Keeper_App.git
    cd Password_Keeper_App `
 
-1.  Database Setup:
+2.  Database Setup:
 
     -   Install MySQL on your local machine.
     -   Create a local database for the app
@@ -27,7 +27,7 @@ The Password Keeper App is a Java-based application designed to simplify passwor
         `CREATE DATABASE password_keeper_db;
         USE password_keeper_db;`
 
-2.  Create the Credential Table:
+3.  Create the Credential Table:
 
     -   Execute the following SQL query to create the "credential" table:
         The table should have three columns: "description," "username," and "password."
@@ -42,7 +42,7 @@ The Password Keeper App is a Java-based application designed to simplify passwor
 
    
 
-3.  Update Hibernate Configuration:
+4.  Update Hibernate Configuration:
 
     -   Open the `hibernate.cfg.xml` file in the `src/main/resources` directory.
 
@@ -56,7 +56,7 @@ The Password Keeper App is a Java-based application designed to simplify passwor
 
     -   Ensure that the JDBC URL, username, and password match your local MySQL setup.
 
-4.  Run the Application:
+5.  Run the Application:
 
     -   After setting up the database and updating the Hibernate configuration, you can run the application using the provided Maven commands in the previous section.
 
